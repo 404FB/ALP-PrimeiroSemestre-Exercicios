@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-// Disciplina : [ALGORITMOS E L”GICA DE PROGRAMA«√O]
-// Professor : JOS… LUIZ RODRIGUES J⁄NIOR
-// DescriÁ„o : Recebe os valores do tri‚ngulo e verifica se ele È v·lido, caso seja v·lido mostra qual È o seu tipo.
+// Disciplina : [ALGORITMOS E L√ìGICA DE PROGRAMA√á√ÉO]
+// Professor : JOS√â LUIZ RODRIGUES J√öNIOR
+// Descri√ß√£o : Recebe os valores do tri√¢ngulo e verifica se ele √© v√°lido, caso seja v√°lido mostra qual √© o seu tipo.
 // Autor(a) : Filipe Antonio de Oliveira Bega
 // Data atual : 13/05/2022
 int main ()
 {
 setlocale(LC_ALL, "Portuguese");
-	//SeÁ„o de declaraÁ„o das vari·veis
+	//Se√ß√£o de declara√ß√£o das vari√°veis
 	double L1, L2, L3;
 	//Entrada de dados
 	printf("Digite o valor do lado 1: ");
@@ -18,22 +18,22 @@ setlocale(LC_ALL, "Portuguese");
 	scanf("%lf", &L2);
 	printf("Digite o valor do lado 3: ");
 	scanf("%lf", &L3);
-	//Testa se o tri‚ngulo È v·lido
+	//Testa se o tri√¢ngulo √© v√°lido
 	  if(((L1+L2)<L3)||((L2+L3)<L1)||((L1+L3)<L2)){
-		 printf("\nTRI¬NGULO N√O … V¡LIDO");
+		 printf("\nTRI√ÇNGULO N√ÉO √â V√ÅLIDO");
       }
 	  else 
-	//Verifica o tipo do tri‚ngulo
+	//Verifica o tipo do tri√¢ngulo
 	  if((L1==L2)&&(L2==L3)) {
-	      printf("\nTRI¬NGULO … EQUIL¡TERO");
+	      printf("\nTRI√ÇNGULO √â EQUIL√ÅTERO");
         }
       else 
 	    if((L1!=L2)&&(L2!=L3)&&(L1!=L3)) {
-	    	printf("\nTRI¬NGULO … ESCALENO");	
+	    	printf("\nTRI√ÇNGULO √â ESCALENO");	
 		}
 	   else 
 	   	 if ((L1==L2)&&(L1!=L3)||(L2==L3)&&(L2!=L1)||(L1==L3)&&(L1!=L2)) {
-	   	 	printf("\nTRI¬NGULO … IS”SCELES");
+	   	 	printf("\nTRI√ÇNGULO √â IS√ìSCELES");
 		}
 return (0);
 } 
